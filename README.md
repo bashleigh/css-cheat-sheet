@@ -119,7 +119,7 @@ input[type="email"] {
 
 A more advanced method is to use the regex selectors (I think that's what they're called?) to select certain parts of the attribute value
 
----|---|---|
+|---|---|
 `^=` | attribute must starts with | `a[href^="https"`
 `$=` | attribute must end with | `a[href$=".jpg"]`
 `*=` | attribute must container anywhere in string | `a[href*=".com"]`
