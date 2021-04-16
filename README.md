@@ -1,6 +1,6 @@
 ## CSS Cheat Sheet
 
-(Simple selectors)[https://www.w3schools.com/cssref/css_selectors.asp]
+[Simple Cheats](https://www.w3schools.com/cssref/css_selectors.asp)
 
 ## Selectors
 
