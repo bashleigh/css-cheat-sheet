@@ -128,6 +128,30 @@ A more advanced method is to use the regex selectors (I think that's what they'r
 
 ### Child selectors
 
+Child selectors are targeted from their parent downwards. Like so `.parent .child .child-of-child`. This selector will target a `child-of-child` class within a `child` class that is also in a `parent` class.
+
+```html
+<div class="parent">
+  <h1>Parent</h1>
+  <div class="child">
+    <h1>Child</h1>
+    <div class="child-of-child">
+      <h1>Child Of Child</h1>
+    </div>
+  </div>
+</div>
+```
+
+```css
+.parent .child .child-of-child {
+  color: red;
+}
+```
+
+> The above will result in only the text "Child of Child" being red.
+
+### Descendants
+
 You can select children within an elements using `>`. This works like so 
 
 
@@ -152,5 +176,4 @@ You can select children within an elements using `>`. This works like so
 
 > In this example, only the first h1 in box will have red text. This is because the box class `.box` is a direct decendant (child) of `.header` specificed in the css with `.header > .box`
 
-### Descendants
 
